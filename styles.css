@@ -262,6 +262,13 @@ cite { font-style: normal; }
 	text-align: center;
 }
 
+.poem
+{
+	margin: 0px;
+	margin-left: 15px;
+	text-indent: -15px;
+}
+
 .contact-links
 {
 	font-size: 0.85rem;
@@ -388,6 +395,12 @@ li:not(:first-child) { margin-top: 7px; }
 	}
 
 	.index-links { font-size: 1.1rem; }
+
+	.poem
+	{
+		margin-left: 40px;
+		text-indent: -40px;
+	}
 
 	.contact-links
 	{
