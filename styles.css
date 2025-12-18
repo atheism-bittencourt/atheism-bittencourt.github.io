@@ -409,6 +409,8 @@ ul, ol { margin-left: -19px; }
 		text-align: initial;
 	}
 
+	.logo { margin-top: -5px; }
+
 	.navigation-button
 	{
 		top: 15px;
