@@ -421,6 +421,7 @@ ul, ol { margin-left: -19px; }
 
 	.wrapper
 	{
+		background-image: url('media/wrapper-background-mobile.jpg');
 		border-radius: 0px;
 		margin-top: 0px;
 		margin-bottom: 0px;
