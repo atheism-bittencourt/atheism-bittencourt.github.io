@@ -395,7 +395,7 @@ ul, ol { margin-left: -19px; }
 	background-image: url('media/wrapper-background.jpg');
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: 730px 730px;
+	background-size: contain;
 	border-radius: 8px;
 	margin-bottom: 15px;
 	margin-top: 14px;
@@ -408,8 +408,6 @@ ul, ol { margin-left: -19px; }
 		background: #fff;
 		text-align: initial;
 	}
-
-	.logo { width: 40%; }
 
 	.navigation-button
 	{
