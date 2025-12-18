@@ -145,7 +145,7 @@ h2
 {
 	font-family: Helvetica, Sans-Serif;
 	font-size: 1.5rem;
-	margin: 7px 0px;
+	margin: -25px 0px;
 	text-wrap: balance;
 }
 
@@ -153,8 +153,16 @@ h3
 {
 	font-family: Helvetica, Sans-Serif;
 	font-size: 1.2rem;
-	margin: -1px 0px;
+	margin: 31px 0px;
 	text-wrap: balance;
+}
+
+h3.index-links
+{
+	font-family: 'Libre Baskerville', Georgia, Serif;
+	font-size: 1rem;
+	line-height: 1.8;
+	margin: 0px;
 }
 
 h4
@@ -162,7 +170,7 @@ h4
 	font-family: Helvetica, Sans-Serif;
 	font-size: 1.1rem;
 	font-weight: normal;
-	margin: 9px 0px;
+	margin: -23px 0px;
 	text-align: center;
 	text-wrap: balance;
 }
@@ -200,7 +208,6 @@ h6
 	font-family: Helvetica, Sans-Serif;
 	hyphens: none;
 	letter-spacing: 0.01rem;
-	padding: 14px 15px 0px 15px;
 	text-align: center;
 }
 
@@ -229,14 +236,6 @@ img.below-h1
 
 .indent { margin-left: 20px; }
 
-.index-links
-{
-	font-size: 1rem;
-	font-family: 'Libre Baskerville', Georgia, Serif;
-	line-height: 1.5;
-	margin-top: 9px;
-}
-
 .languages
 {
 	color: #bbb;
@@ -255,7 +254,12 @@ li
 }
 
 li:not(:first-child) { margin-top: 7px; }
-.logo { width: 30.6%; }
+
+.logo
+{
+	margin-top: -15px;
+	width: 264px;
+}
 
 .main-div
 {
@@ -368,7 +372,7 @@ li:not(:first-child) { margin-top: 7px; }
 	color: #bbb;
 	font-size: 1rem;
 	line-height: 1.3;
-	margin-top: 28px;
+	margin-top: 51px;
 }
 
 ul, ol { margin-left: -19px; }
@@ -409,8 +413,6 @@ ul, ol { margin-left: -19px; }
 		text-align: initial;
 	}
 
-	.logo { width: 50%; }
-
 	.navigation-button
 	{
 		top: 15px;
@@ -419,7 +421,6 @@ ul, ol { margin-left: -19px; }
 
 	.wrapper
 	{
-		background-size: 100%;
 		border-radius: 0px;
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -437,12 +438,12 @@ ul, ol { margin-left: -19px; }
 	}
 
 	.counseling li { text-align: justify; }
-	.header { padding: 14px 39px 0px 39px; }
 
-	.index-links
+	h3.index-links
 	{
+		font-family: 'Libre Baskerville', Georgia, Serif;
 		font-size: 1.1rem;
-		line-height: 1.3;
+		line-height: 1.7;
 	}
 
 	.main-div { padding: 0px 39px 37px 39px; }
