@@ -324,7 +324,7 @@ li:not(:first-child) { margin-top: 7px; }
 	margin-top: 22px;
 	margin-bottom: 23px;
 	text-align: left;
-	text-indent: -1ch;
+	text-indent: -0.5ch;
 }
 
 .quote-author
