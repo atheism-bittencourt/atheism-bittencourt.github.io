@@ -10,7 +10,7 @@
 	<style>		.player-container
 		{
 			background: #fff;
-			margin-top: 46px;
+			margin-top: -9px;
 			outline: solid 1px #999;
 			outline-offset: -1px;
 			text-align: center;
@@ -22,14 +22,25 @@
 			padding: 0px;
 		}
 
+		.controls button
+		{
+			background: #fff;
+			border: solid 1px #999;
+			cursor: pointer;
+			margin-top: 12px;
+			padding-top: 4px;
+			height: 51px;
+			width: 51px;
+		}
+
 		.progress-container
 		{
 			background: #fff;
 			border: solid 1px #999;
 			border-radius: 5px;
 			cursor: pointer;
-			height: 10px;
-			margin: 4px 12px 0px 12px;
+			height: 11px;
+			margin: 11px 12px 0px 12px;
 		}
 
 		.progress
@@ -39,25 +50,6 @@
 			height: 100%;
 			transition: width 0.1s linear;
 			width: 0%;
-		}
-
-		.controls { margin-top: 6px; }
-
-		.controls button
-		{
-			background: #fff;
-			border: solid 1px #999;
-			cursor: pointer;
-			margin-top: 5px;
-			padding-top: 4px;
-			height: 51px;
-			width: 51px;
-		}
-
-		#playlist
-		{
-			border-top: solid 1px #999;
-			margin-top: 11px;
 		}
 
 		.playlist li
@@ -143,23 +135,23 @@
 			<span class="indent">Touring Brazil, American and European musicians came into contact with this new musical style, promoting it in their countries. Bossa nova became so popular in the United States that, in 1962, Brazilian musicians were invited to perform at Carnegie Hall, in New York, in a concert entitled Bossa Nova (New Brazilian Jazz). In the audience were jazz icons, such as Miles Davis, Tony Bennett, Peggy Lee and Herbie Mann. The concert was broadcast live to several American and European radio stations. Two weeks later, the cream of the bossa nova musicians performed at the George Washington Auditorium and was welcomed at the White House by Jacqueline Kennedy.</span><br>
 			<span class="indent">From then on, bossa nova conquered the entire world. According to <i>Performing Songwriter</i> magazine, the song <i>Garota de Ipanema (The Girl from Ipanema)</i> is worldwide the second-most recorded song of all time.</span>
 		</p>
+		<h5>
+			Paulo Bittencourt’s Music
+		</h5>
 		<div id="player" class="player-container">
 			<div class="current-song">
 				<h2 id="title" style="display: none">
 					Song Title
 				</h2>
-				<h5 style="padding-top: 34px; margin-bottom: 0px">
-					Paulo Bittencourt’s Music
-				</h5>
+			</div>
+<!-- Controls -->
+			<div class="controls">
+				<button id="prev"><img style="height: 17px" alt="previous" src="media/previous.svg"></button><button id="play" style="margin-left: 11px; margin-right: 11px"><img style="height: 17px" alt="play" src="media/play.svg"></button><button id="next"><img style="height: 17px" alt="next" src="media/next.svg"></button><button id="stop" style="display: none">Stop</button>
 			</div>
 <!-- Progress Bar -->
 			<div id="progress-container" class="progress-container">
 				<div id="progress" class="progress">
 				</div>
-			</div>
-<!-- Controls -->
-			<div class="controls">
-				<button id="prev"><img style="height: 17px" alt="previous" src="media/previous.svg"></button><button id="play" style="margin-left: 11px; margin-right: 11px"><img style="height: 17px" alt="play" src="media/play.svg"></button><button id="next"><img style="height: 17px" alt="next" src="media/next.svg"></button><button id="stop" style="display: none">Stop</button>
 			</div>
 <!-- Playlist -->
 			<ul id="playlist" class="playlist">
