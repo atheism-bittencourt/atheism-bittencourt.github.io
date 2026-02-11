@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Paulo Bittencourt’s Voice and Guitar — Freethought, Humanism and Atheism</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/svg+xml" href="media/paulo-bittencourt.svg">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta property="og:image" content="media/paulo-bittencourt-musica-bossa-nova.jpg">
+	<style>		.player-container
+		{
+			background: #fff;
+			margin-top: -8px;
+			outline: solid 1px #999;
+			outline-offset: -1px;
+			text-align: center;
+		}
+
+		.player-container ul, ol
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.controls button
+		{
+			background: #fff;
+			border: solid 1px #999;
+			border-radius: 3px;
+			cursor: pointer;
+			font-family: 'Roboto', Sans-Serif;
+			font-size: 1.4rem;
+			line-height: 2.4;
+			margin-top: 12px;
+			height: 51px;
+			width: 51px;
+		}
+
+		.progress-container
+		{
+			background: #fff;
+			border: solid 1px #999;
+			border-radius: 5px;
+			cursor: pointer;
+			height: 11px;
+			margin: 11px 12px 0px 12px;
+		}
+
+		.progress
+		{
+			background: #005ddd;
+			border-radius: 4px;
+			height: 100%;
+			transition: width 0.1s linear;
+			width: 0%;
+		}
+
+		.playlist
+		{
+			max-height: 267px;
+			overflow-y: scroll;
+		}
+
+		.playlist li
+		{
+			border-bottom: solid 1px;
+			border-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgba(204, 204, 204, 1), rgba(0, 0, 0, 0));
+			border-image-slice: 1;
+			cursor: pointer;
+			display: block;
+			font-size: 1.1rem;
+			font-weight: normal;
+			line-height: 1.1;
+			margin: 0px;
+			padding: 7px 0px 7px 0px;
+		}
+
+		.active-song
+		{
+			border-bottom: solid 1px;
+			border-image: linear-gradient(0.25turn, rgba(204, 204, 204, 1), rgba(204, 204, 204, 1), rgba(204, 204, 204, 1));
+			border-image-slice: 1;
+			background: #f5f5f5;
+			margin-top: -1px;
+		}
+
+		.song-authors
+		{
+			display: block;
+			font-size: 0.9rem;
+		}
+
+		@media only screen and (min-width: 750px)
+		{
+			.playlist li { padding: 7px 0px 7px 15px; }
+			.playlist li:hover { background: #f5f5f5; }
+		}
+</style>
+</head>
+<body>
+<a class="navigation-button-top-left" href="/">&#9776;&#xfe0e;</a>
+<div class="wrapper">
+	<div class="header">
+		<a href="/"><img class="logo" alt="Paulo Bitencourt, freethinker, humanist and atheist" src="media/paulo-bittencourt.svg"></a>
+		<h2>
+			Paulo Bittencourt
+		</h2>
+		<h3>
+			Freethought, Humanism, Atheism
+		</h3>
+		<h4>
+			“I don’t want to believe, I want to know.”
+		</h4>
+		<p class="top-links">
+			<a href="books">Books</a> • <a href="https://bittencourt-ateismo.github.io">Español</a> • <a href="https://ateismo-bittencourt.github.io">Português</a> • <a href="https://atheismus-bittencourt.github.io">Deutsch</a>
+		</p>
+		<hr class="header-separator">
+	</div>
+	<div class="main-div">
+		<h1>
+			Paulo Bittencourt Sings Bossa Nova
+		</h1>
+		<a href="#player"><img class="below-h1" alt="Bossa Nova, Brazilian music, played on the guitar and sung by Paulo Bittencourt" src="media/paulo-bittencourt-bossa-nova-music.jpg" /></a>
+		<h5 style="margin-top: 21px">
+			What is bossa nova?
+		</h5>
+		<h6 style="margin-top: -18px">
+			The History of João Gilberto, Tom Jobim and Vinícius de Moraes’ Music
+		</h6>
+		<p class="copyright" style="margin-top: 16px">
+			© Paulo Bittencourt
+		</p>
+		<p class="below-copyright">
+			In Vienna, Austria, I graduated in Opera Singing, but, to be honest, I don’t love opera as much as I love bossa nova.
+		</p>
+		<p>
+			Hang on. You don’t know what bossa nova is?!
+		</p>
+		<p>
+			Well, bossa nova emerged in Brazil, at the end of the 1950s. Young Brazilian musicians, residents of the South Zone of Rio de Janeiro, where the beaches of Copacabana and Ipanema are, were more interested in jazz than in the Brazilian music of that time, which they considered old-fashioned. Similar to opera arias, Brazilian songs were then sung with an operatic voice. The lyrics were cheesy, their phraseology wasn’t that spoken by the youth.
+		</p>
+		<p>
+			Many of these musicians played in Rio’s bars and nightclubs. Being big fans of jazz, elements of this musical style ended up flowing into their compositions, making their music sound different from what Brazilians were used to hearing. They often gathered to listen to the latest jazz records or show each other their compositions. They weren’t, however, aware that they were creating a new musical genre.
+		</p>
+		<p>
+			That changed when a young man from the State of Bahia went to try his hand at a musician’s career in Rio de Janeiro. His name was João Gilberto. Not making enough money even to pay the rent, João lived in his friends’ apartments, who, over time, couldn’t stand his strange habits any longer and kicked him out. Whenever João didn’t have anyone willing to offer him a bed, he left Rio and went to live with his sister. There, he would lock himself in the bathroom and spend hours playing a single chord, obsessed with the idea of finding a new way to play the guitar.
+		</p>
+		<p>
+			And he found it. João Gilberto stylized the samba rhythm, applying jazz chords to it. Furthermore, instead of hitting the strings, he played the low notes with his thumb and, at once, plucked the other strings with his index, middle and ring fingers. Regarding the singing, João began to sing quietly, softly, in a velvety way and without vibrato.
+		</p>
+		<p>
+			That was it! Back in Rio, João Gilberto showed the other musicians his new way of playing and singing. One who was very impressed was Antônio Carlos Jobim, better known as Tom Jobim, who would become the most international of the bossa nova composers. In 1958, singer Elizeth Cardoso recorded an album entitled <i>Canção do Amor Demais</i>, entirely with compositions by Jobim, with lyrics by Vinícius de Moraes. João accompanied Elizeth on the guitar on two tracks: <i>Chega de Saudade</i> and <i>Outra Vez</i>. That was the first album to record his new way of playing. Three months later, Gilberto recorded his own album, singing and playing. Bossa nova, also called Brazilian jazz, had officially been born.
+		</p>
+		<p>
+			The word bossa means protuberance, protrusion. In the slang of the time, it connoted fashion, talent, someone or something that stands out, or is sophisticated. Thus, bossa nova came to mean something like new sophistication.
+		</p>
+		<img class="below-h1" style="margin-top: 30px" alt="Frank Sinatra, Tom Jobim, bossa nova music, by Paulo Bittencourt" src="media/frank-sinatra-tom-jobim-bossa-nova-music-paulo-bittencourt.jpg" />
+		<p class="caption" style="margin-top: 6px">
+			Frank Sinatra and Antônio Carlos Jobim.
+		</p>
+		<p style="margin-top: 26px">
+			Touring Brazil, American and European musicians came into contact with this new musical style, promoting it in their countries. Bossa nova became so popular in the United States that, in 1962, Brazilian musicians were invited to perform at Carnegie Hall, in New York, in a concert entitled Bossa Nova (New Brazilian Jazz). In the audience were jazz icons, such as Miles Davis, Tony Bennett, Peggy Lee and Herbie Mann. The concert was broadcast live to several American and European radio stations. Two weeks later, the cream of the bossa nova musicians performed at the George Washington Auditorium and was welcomed at the White House by Jacqueline Kennedy.
+		</p>
+		<p>
+			From then on, bossa nova conquered the entire world. According to <i>Performing Songwriter</i> magazine, the song <i>Garota de Ipanema (The Girl from Ipanema)</i> is worldwide the second-most recorded song of all time.
+		</p>
+		<h5>
+			Paulo Bittencourt’s Music
+		</h5>
+		<div id="player" class="player-container">
+			<div class="current-song">
+				<h2 id="title" style="display: none">
+					Song Title
+				</h2>
+			</div>
+<!-- Controls -->
+			<div class="controls">
+				<button id="prev">&#9198;</button> <button id="play" style="margin-left: 7px; margin-right: 7px; padding-left: 9px">&#9654;</button> <button id="next">&#9197;</button> <button id="stop" style="display: none">Stop</button>
+			</div>
+<!-- Progress Bar -->
+			<div id="progress-container" class="progress-container">
+				<div id="progress" class="progress">
+				</div>
+			</div>
+<!-- Playlist -->
+			<ul id="playlist" class="playlist">
+				<li class="active-song" data-src="media/music/01-aquarela-bossa-nova-paulo-bittencourt.mp3">Aquarela<span class="song-authors">(Toquinho & Vinícius)</span></li>
+				<li data-src="media/music/10-o-que-sera-bossa-nova-paulo-bittencourt.mp3">O Que Será<span class="song-authors">(Buarque)</span></li>
+				<li data-src="media/music/14-tem-do-bossa-nova-paulo-bittencourt.mp3">Tem Dó<span class="song-authors">(Powell & Vinícius)</span></li>
+				<li data-src="media/music/12-tamanco-no-samba-bossa-nova-paulo-bittencourt.mp3">Tamanco no Samba<span class="song-authors">(Orlandivo)</span></li>
+				<li data-src="media/music/02-bonita-bossa-nova-paulo-bittencourt.mp3">Bonita<span class="song-authors">(Jobim)</span></li>
+				<li data-src="media/music/04-comecou-de-brincadeira-bossa-nova-paulo-bittencourt.mp3">Começou de Brincadeira<span class="song-authors">(Mascarenhas)</span></li>
+				<li data-src="media/music/05-copacabana-bossa-nova-paulo-bittencourt.mp3">Copacabana<span class="song-authors">(Braga & Ribeiro)</span></li>
+				<li data-src="media/music/06-deixa-bossa-nova-paulo-bittencourt.mp3">Deixa<span class="song-authors">(Powell & Vinícius)</span></li>
+				<li data-src="media/music/07-desencontro-bossa-nova-paulo-bittencourt.mp3">Desencontro<span class="song-authors">(Buarque)</span></li>
+				<li data-src="media/music/08-melodia-sentimental-bossa-nova-paulo-bittencourt.mp3">Melodia Sentimental<span class="song-authors">(Villa-Lobos & Vasconcellos)</span></li>
+				<li data-src="media/music/09-mocinho-bonito-bossa-nova-paulo-bittencourt.mp3">Mocinho Bonito<span class="song-authors">(Blanco)</span></li>
+				<li data-src="media/music/11-sonho-de-um-carnaval-bossa-nova-paulo-bittencourt.mp3">Sonho de Um Carnaval<span class="song-authors">(Buarque)</span></li>
+				<li data-src="media/music/13-tarde-em-itapua-bossa-nova-paulo-bittencourt.mp3">Tarde em Itapuã<span class="song-authors">(Toquinho & Vinícius)</span></li>
+				<li data-src="media/music/03-caminhos-cruzados-bossa-nova-paulo-bittencourt.mp3">Caminhos Cruzados<span class="song-authors">(Jobim & Mendonça)</span></li>
+			</ul>
+		</div>
+		<audio id="audio-element">
+		</audio>
+		<div style="margin-top: 39px; margin-bottom: 33px; text-align: center">
+			<a href="https://www.paypal.com/donate?hosted_button_id=W8GZGFGKLCA9S" target="_blank"><span class="green-button">Like it? Buy<br>
+			me a coffee</span></a>
+		</div>
+		<p class="languages">
+			<a href="https://ateismo-bittencourt.github.io/musica-bossa-nova">PT</a> • <a href="https://atheismus-bittencourt.github.io/bossa-nova-musik">DE</a>
+		</p>
+		<hr class="navigation-separator">
+		<div class="navigation">
+			<div>
+				<a href="vienna-austria">&#9664;&#xfe0e;</a>
+			</div>
+			<div style="margin: 0 auto">
+				<a href="/">&#9776;&#xfe0e;</a>
+			</div>
+			<div style="text-align: right">
+				<a href="photography">&#9654;&#xfe0e;</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	const audio = document.getElementById('audio-element');
+	const playBtn = document.getElementById('play');
+	const stopBtn = document.getElementById('stop');
+	const nextBtn = document.getElementById('next');
+	const prevBtn = document.getElementById('prev');
+	const title = document.getElementById('title');
+	const progress = document.getElementById('progress');
+	const progressContainer = document.getElementById('progress-container');
+	const playlist = document.getElementById('playlist');
+	const playlistItems = document.querySelectorAll('#playlist li');
+
+	let currentSongIndex = 0;
+
+	// Load song
+	function loadSong(songSrc, songTitle) {
+	    title.innerText = songTitle;
+	    audio.src = songSrc;
+	}
+
+	// Play/Pause
+	function togglePlay() {
+	    if (audio.paused) {
+	        audio.play();
+	        playBtn.innerHTML = '<span style="margin-left: -3px">&#9208;</span>';
+	    } else {
+	        audio.pause();
+	        playBtn.innerHTML = '&#9654;';
+	    }
+	}
+
+	// Stop
+	function stopSong() {
+	    audio.pause();
+	    audio.currentTime = 0;
+	    playBtn.innerHTML = '<span style="margin-left: -3px">&#9208;</span>';
+	}
+
+	// Next Song
+	function nextSong() {
+	    currentSongIndex = (currentSongIndex + 1) % playlistItems.length;
+	    loadAndPlay();
+	}
+
+	// Previous Song
+	function prevSong() {
+	    currentSongIndex = (currentSongIndex - 1 + playlistItems.length) % playlistItems.length;
+	    loadAndPlay();
+	}
+
+	function loadAndPlay() {
+	    const nextSongItem = playlistItems[currentSongIndex];
+	    loadSong(nextSongItem.getAttribute('data-src'), nextSongItem.innerText);
+	    audio.play();
+	    playBtn.innerHTML = '<span style="margin-left: -3px">&#9208;</span>';
+	    updateActiveTitle();
+	}
+
+	// Update Progress Bar
+	function updateProgress(e) {
+	    const { duration, currentTime } = e.srcElement;
+	    const progressPercent = (currentTime / duration) * 100;
+	    progress.style.width = `${progressPercent}%`;
+	}
+
+	// Click to Seek
+	function setProgress(e) {
+	    const width = this.clientWidth;
+	    const clickX = e.offsetX;
+	    const duration = audio.duration;
+	    audio.currentTime = (clickX / width) * duration;
+	}
+
+	// Click Title to Play
+	playlistItems.forEach((item, index) => {
+	    item.addEventListener('click', () => {
+	        currentSongIndex = index;
+	        loadAndPlay();
+	    });
+	});
+
+	function updateActiveTitle() {
+	    playlistItems.forEach(item => item.classList.remove('active-song'));
+	    playlistItems[currentSongIndex].classList.add('active-song');
+	}
+
+	// Event Listeners
+	playBtn.addEventListener('click', togglePlay);
+	stopBtn.addEventListener('click', stopSong);
+	nextBtn.addEventListener('click', nextSong);
+	prevBtn.addEventListener('click', prevSong);
+	audio.addEventListener('timeupdate', updateProgress);
+	progressContainer.addEventListener('click', setProgress);
+	audio.addEventListener('ended', nextSong); // Auto play next
+
+	// Initial load
+	loadSong(playlistItems[0].getAttribute('data-src'), playlistItems[0].innerText);
+</script>
+</body>
+</html>
