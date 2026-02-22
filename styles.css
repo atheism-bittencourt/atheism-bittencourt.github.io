@@ -407,6 +407,20 @@ p
 	text-indent: 20px;
 }
 
+.photography-album
+{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+	margin-top: 42px;
+}
+
+.photography-album div
+{
+	margin-top: -9px;
+	outline: solid 1px #fff;
+}
+
 .poem
 {
 	margin: 0px;
