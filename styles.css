@@ -412,7 +412,7 @@ p
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(9, 1fr);
-	margin-top: 42px;
+	margin-top: 22px;
 }
 
 .photography-album div
