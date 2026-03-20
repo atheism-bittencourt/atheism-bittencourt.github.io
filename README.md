@@ -1,49 +1,5 @@
-Atheism, Humanism and Freethought. 
+Atheism, Humanism and Freethought.
 
 Books “Liberated from Religion” and “Wasting Time on God”, by Paulo Bittencourt.
 
-[Download Paulo Bittencourt’s Books](Download Paulo Bittencourt’s Books)
-
-[What is Atheism?](What is Atheism?)
-
-[What is Humanism?](What is Humanism?)
-
-[What is Freethought?](What is Freethought?)
-
-[Disbelief Kills](Disbelief Kills)
-
-[Is the Bible the Word of God?](Is the Bible the Word of God?)
-
-[Christians of Satan](Christians of Satan)
-
-[Scared of Religion](Scared of Religion)
-
-[Spinoza: Pantheist or Atheist?](Spinoza: Pantheist or Atheist?)
-
-[God Doesn’t Exist](God Doesn’t Exist)
-
-[I Am God](I Am God)
-
-[In Order to Be Loved](In Order to Be Loved)
-
-[Reflections on Religions](Reflections on Religions)
-
-[Help to Leave the Church](Help to Leave the Church)
-
-[Thoughts and Quotations](Thoughts and Quotations)
-
-[Best Atheism Quotations](Best Atheism Quotations)
-
-[Spread Freethought](Spread Freethought)
-
-[Who the hell is Paulo Bittencourt?](Who the hell is Paulo Bittencourt?)
-
-[Paulo Bittencourt’s Life in Vienna](Paulo Bittencourt’s Life in Vienna)
-
-[Paulo Bittencourt Sings Brazilian Jazz](Paulo Bittencourt Sings Brazilian Jazz)
-
-[The Photographic Art of Paulo Bittencourt](The Photographic Art of Paulo Bittencourt)
-
-[The Bittencourt Family Name](The Bittencourt Family Name)
-
-[About and Contact](About and Contact)
+<a href="https://atheism-bittencourt.github.io/books">Download Paulo Bittencourt’s Books</a><br><a href="https://atheism-bittencourt.github.io/atheism">What is Atheism?</a><br><a href="https://atheism-bittencourt.github.io/humanism">What is Humanism?</a><br><a href="https://atheism-bittencourt.github.io/free-thought">What is Freethought?</a><br><a href="https://atheism-bittencourt.github.io/atheism-kills">Disbelief Kills</a><br><a href="https://atheism-bittencourt.github.io/bible">Is the Bible the Word of God?</a><br><a href="https://atheism-bittencourt.github.io/satanists">Christians of Satan</a><br><a href="https://atheism-bittencourt.github.io/religion">Scared of Religion</a><br><a href="https://atheism-bittencourt.github.io/spinoza">Spinoza: Pantheist or Atheist?</a><br><a href="https://atheism-bittencourt.github.io/god-exists">God Doesn’t Exist</a><br><a href="https://atheism-bittencourt.github.io/god">I Am God</a><br><a href="https://atheism-bittencourt.github.io/love">In Order to Be Loved</a><br><a href="https://atheism-bittencourt.github.io/reflections">Reflections on Religions</a><br><a href="https://atheism-bittencourt.github.io/religious-trauma">Help to Leave the Church</a><br><a href="https://atheism-bittencourt.github.io/quotes">Thoughts and Quotations</a><br><a href="https://atheism-bittencourt.github.io/best-quotes">Best Atheism Quotations</a><br><a href="https://atheism-bittencourt.github.io/freethought">Spread Freethought</a><br><a href="https://atheism-bittencourt.github.io/paulo-biography">Who the hell is Paulo Bittencourt?</a><br><a href="https://atheism-bittencourt.github.io/vienna-austria">Paulo Bittencourt’s Life in Vienna</a><br><a href="https://atheism-bittencourt.github.io/bossa-nova-music">Paulo Bittencourt Sings Brazilian Jazz</a><br><a href="https://atheism-bittencourt.github.io/photography">The Photographic Art of Paulo Bittencourt</a><br><a href="https://atheism-bittencourt.github.io/surname">The Bittencourt Family Name</a><br><a href="https://atheism-bittencourt.github.io/contact">About and Contact</a>
