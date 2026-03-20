@@ -1,27 +1,49 @@
 Atheism, Humanism and Freethought. 
 
-Books “Liberated from Religion” and “Wasting Time on God”, by Paulo Bittencourt. 
+Books “Liberated from Religion” and “Wasting Time on God”, by Paulo Bittencourt.
 
 [Download Paulo Bittencourt’s Books](Download Paulo Bittencourt’s Books)
+
 [What is Atheism?](What is Atheism?)
+
 [What is Humanism?](What is Humanism?)
+
 [What is Freethought?](What is Freethought?)
+
 [Disbelief Kills](Disbelief Kills)
+
 [Is the Bible the Word of God?](Is the Bible the Word of God?)
+
 [Christians of Satan](Christians of Satan)
+
 [Scared of Religion](Scared of Religion)
+
 [Spinoza: Pantheist or Atheist?](Spinoza: Pantheist or Atheist?)
+
 [God Doesn’t Exist](God Doesn’t Exist)
+
 [I Am God](I Am God)
+
 [In Order to Be Loved](In Order to Be Loved)
+
 [Reflections on Religions](Reflections on Religions)
+
 [Help to Leave the Church](Help to Leave the Church)
+
 [Thoughts and Quotations](Thoughts and Quotations)
+
 [Best Atheism Quotations](Best Atheism Quotations)
+
 [Spread Freethought](Spread Freethought)
+
 [Who the hell is Paulo Bittencourt?](Who the hell is Paulo Bittencourt?)
+
 [Paulo Bittencourt’s Life in Vienna](Paulo Bittencourt’s Life in Vienna)
+
 [Paulo Bittencourt Sings Brazilian Jazz](Paulo Bittencourt Sings Brazilian Jazz)
+
 [The Photographic Art of Paulo Bittencourt](The Photographic Art of Paulo Bittencourt)
+
 [The Bittencourt Family Name](The Bittencourt Family Name)
+
 [About and Contact](About and Contact)
