@@ -341,16 +341,18 @@ h6
 	text-indent: 0px;
 }
 
-.highlight-yellow
-{
-	background-image: linear-gradient(0deg, #ffff0080 2em, transparent 2em);
-	padding: 0.1em 0em;
-}
-
 .highlight-orange
 {
 	background-image: linear-gradient(0deg, #ffa50080 2em, transparent 2em);
-	padding: 0.1em 0em;
+	padding: 0.1em 0.1em;
+	margin: 0em -0.1em;
+}
+
+.highlight-yellow
+{
+	background-image: linear-gradient(0deg, #ffff0080 2em, transparent 2em);
+	padding: 0.1em 0.1em;
+	margin: 0em -0.1em;
 }
 
 img { max-width: 100%; }
