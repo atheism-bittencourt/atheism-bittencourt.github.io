@@ -28,6 +28,8 @@ Books “Liberated from Religion” and “Wasting Time on God”, by Paulo Bitt
 
 <a href="https://bittencourt.pages.dev/reflections">Reflections on Religions</a>
 
+<a href="https://bittencourt.pages.dev/jean-meslier-testament">Jean Meslier’s Testament</a>
+
 <a href="https://bittencourt.pages.dev/religious-trauma">Help to Leave the Church</a>
 
 <a href="https://bittencourt.pages.dev/quotes">Thoughts and Quotations</a>
