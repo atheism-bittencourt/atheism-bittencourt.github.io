@@ -14,6 +14,8 @@ Books “Liberated from Religion” and “Wasting Time on God”, by Paulo Bitt
 
 <a href="https://bittencourt.pages.dev/bible">A Book Full of Perversities</a>
 
+<a href="https://bittencourt.pages.dev/scripture">The Book That Killed Millions</a>
+
 <a href="https://bittencourt.pages.dev/creationism">Debunking Creationism</a>
 
 <a href="https://bittencourt.pages.dev/jesus">You Are in a Jesus Cult</a>
