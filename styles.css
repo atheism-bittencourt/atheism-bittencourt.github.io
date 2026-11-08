@@ -111,8 +111,6 @@ img.below-copyright
 	text-indent: 0px;
 }
 
-.bold { font-weight: bold; }
-
 img.below-h1
 {
 	border-radius: 4px;
@@ -140,6 +138,9 @@ img.below-h1
 }
 
 blockquote { margin: 0px; }
+
+.bold { font-weight: bold; }
+
 .bullets { color: #bbb; }
 .center { text-align: center; }
 cite { font-style: normal; }
