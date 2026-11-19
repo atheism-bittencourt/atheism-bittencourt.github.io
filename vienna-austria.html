@@ -10,6 +10,120 @@
 	<link rel="canonical" href="https://bittencourt.pages.dev/vienna-austria">
 	<link rel="alternate" hreflang="en" href="https://bittencourt.pages.dev/vienna-austria">
 	<link rel="alternate" hreflang="pt" href="https://bittencourt-pt.pages.dev/viena-austria">
+	<style>		.player-container
+		{
+			background: #fff;
+			outline: solid 1px #999;
+			outline-offset: -1px;
+		}
+
+		.player-container ul, ol
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.controls
+		{
+			display: grid;
+			grid-template-columns: auto 12px 51px 11px 51px 11px 51px 12px auto;
+			justify-items: center;
+			padding: 12px 13px 0px 13px;
+		}
+
+		.controls button
+		{
+			background: #fff;
+			border: solid 1px #999;
+			border-radius: 5px;
+			cursor: pointer;
+			font-family: 'Roboto', Sans-Serif;
+			font-size: 1.4rem;
+			height: 51px;
+			line-height: 2.4;
+		}
+
+		.speakers
+		{
+			background: #fdfdfd;
+			background-image: url('media/speaker-grid.png'), url('media/speaker.png');
+			background-position: top left, center;
+			background-size: 5px 5px, 50px 50px;
+			background-repeat: repeat, no-repeat;
+			border-radius: 5px;
+			border: solid 1px #999;
+			box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 0.8);
+			height: 49px;
+			width: 100%;
+		}
+
+		.progress-container
+		{
+			background: #fff;
+			border-radius: 5px;
+			border: solid 1px #999;
+			cursor: pointer;
+			height: 11px;
+			margin: 11px 12px 0px 12px;
+		}
+
+		.progress
+		{
+			background: #005ddd;
+			border-radius: 4px;
+			height: 100%;
+			transition: width 0.1s linear;
+			width: 0%;
+		}
+
+		.playlist
+		{
+			max-height: 267px;
+			overflow-y: scroll;
+			text-align: center;
+		}
+
+		.playlist li
+		{
+			border-bottom: solid 1px;
+			border-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0), rgba(204, 204, 204, 1), rgba(0, 0, 0, 0));
+			border-image-slice: 1;
+			cursor: pointer;
+			display: block;
+			font-size: 1.1rem;
+			font-weight: normal;
+			line-height: 1.1;
+			margin: 0px;
+			padding: 7px 0px 7px 0px;
+		}
+
+		.active-song
+		{
+			background: #f5f5f5;
+			border-bottom: solid 1px;
+			border-image: linear-gradient(0.25turn, rgba(204, 204, 204, 1), rgba(204, 204, 204, 1), rgba(204, 204, 204, 1));
+			border-image-slice: 1;
+			margin-top: -1px;
+		}
+
+		.song-authors
+		{
+			display: block;
+			font-size: 0.9rem;
+		}
+
+		@media only screen and (min-width: 750px)
+		{
+			.speakers
+			{
+				background-image: url('media/speaker-grid.png'), url('media/two-speakers.png');
+				background-size: 5px 5px, 140px 50px;
+			}
+
+			.playlist li { padding: 7px 0px 7px 15px; }
+			.playlist li:hover { background: #f5f5f5; }
+		}
+</style>
 </head>
 <body>
 <div class="navigation-top">
@@ -75,8 +189,48 @@
 				A concert of songs by Heitor Villa-Lobos, at the Schubert Hall, in Vienna, whose objective was to raise public awareness of the problems faced by the indigenous peoples of the Amazon, especially the Yanomami (1996). I sang <i>Three Indigenous Poems</i>.
 			</figcaption>
 		</figure>
+		<div id="player" class="player-container" style="margin-top: 9px">
+			<div class="current-song">
+				<h2 id="title" style="display: none">
+					Song Title
+				</h2>
+			</div>
+<!-- Controls -->
+			<div class="controls">
+				<div class="speakers">
+				</div>
+				<div>
+				</div>
+				<button id="prev" style="width: 100%">&#9198;</button>
+				<div>
+				</div>
+				<button id="play" style="width: 100%; padding-left: 9px">&#9654;</button>
+				<div>
+				</div>
+				<button id="next" style="width: 100%">&#9197;</button>
+				<div>
+				</div>
+				<div class="speakers">
+				</div>
+			</div>
+			<button id="stop" style="display: none">Stop</button>
+<!-- Progress Bar -->
+			<div id="progress-container" class="progress-container">
+				<div id="progress" class="progress">
+				</div>
+			</div>
+<!-- Playlist -->
+			<ul id="playlist" class="playlist">
+				<li class="active-song" data-src="https://bittencourt.pages.dev/media/music/01-caninde-ioune-villa-lobos-paulo-bittencourt.mp3">Aquarela<span class="song-authors">(Heitor Villa-Lobos)</span></li>
+				<li data-src="https://bittencourt.pages.dev/media/music/02-estrela-e-lua-nova-villa-lobos-paulo-bittencourt.mp3">O Que Será<span class="song-authors">(Heitor Villa-Lobos)</span></li>
+				<li data-src="https://bittencourt.pages.dev/media/music/03-viola-quebrada-villa-lobos-paulo-bittencourt.mp3">Tem Dó<span class="song-authors">(Heitor Villa-Lobos)</span></li>
+				<li data-src="https://bittencourt.pages.dev/media/music/04-a-gatinha-parda-villa-lobos-paulo-bittencourt.mp3">Tamanco no Samba<span class="song-authors">(Heitor Villa-Lobos)</span></li>
+			</ul>
+		</div>
+		<audio id="audio-element">
+		</audio>
 		<figure>
-			<a href="https://bittencourt.pages.dev/media/paulo-bittencourt-06.jpg" target="_blank"><img style="margin-top: 30px; border-radius: 4px" alt="Paulo Bittencourt, in a costume from the play “Orpheus in the Underworld”, at the Burgtheater, in Vienna, Austria (1996)" src="https://bittencourt.pages.dev/media/paulo-bittencourt-06.jpg"></a>
+			<a href="https://bittencourt.pages.dev/media/paulo-bittencourt-06.jpg" target="_blank"><img style="margin-top: 40px; border-radius: 4px" alt="Paulo Bittencourt, in a costume from the play “Orpheus in the Underworld”, at the Burgtheater, in Vienna, Austria (1996)" src="https://bittencourt.pages.dev/media/paulo-bittencourt-06.jpg"></a>
 			<figcaption class="vienna no-indent">
 				In 1995, I was hired by the largest German-language theater, the Vienna Burgtheater. One of the plays I took part in (written by Austrian author Elfriede Jelinek, winner of the Nobel Prize in Literature) was performed also in Berlin. In the photo, I’m wearing a costume from the play <i>Orpheus in the Underworld</i> (1996).
 			</figcaption>
@@ -170,5 +324,103 @@
 		</div>
 	</div>
 </div>
+<script>
+	const audio = document.getElementById('audio-element');
+	const playBtn = document.getElementById('play');
+	const stopBtn = document.getElementById('stop');
+	const nextBtn = document.getElementById('next');
+	const prevBtn = document.getElementById('prev');
+	const title = document.getElementById('title');
+	const progress = document.getElementById('progress');
+	const progressContainer = document.getElementById('progress-container');
+	const playlist = document.getElementById('playlist');
+	const playlistItems = document.querySelectorAll('#playlist li');
+
+	let currentSongIndex = 0;
+
+	// Load song
+	function loadSong(songSrc, songTitle) {
+	    title.innerText = songTitle;
+	    audio.src = songSrc;
+	}
+
+	// Play/Pause
+	function togglePlay() {
+	    if (audio.paused) {
+	        audio.play();
+	        playBtn.innerHTML = '<span style="margin-left: -3px">&#9208;</span>';
+	    } else {
+	        audio.pause();
+	        playBtn.innerHTML = '&#9654;';
+	    }
+	}
+
+	// Stop
+	function stopSong() {
+	    audio.pause();
+	    audio.currentTime = 0;
+	    playBtn.innerHTML = '<span style="margin-left: -3px">&#9208;</span>';
+	}
+
+	// Next Song
+	function nextSong() {
+	    currentSongIndex = (currentSongIndex + 1) % playlistItems.length;
+	    loadAndPlay();
+	}
+
+	// Previous Song
+	function prevSong() {
+	    currentSongIndex = (currentSongIndex - 1 + playlistItems.length) % playlistItems.length;
+	    loadAndPlay();
+	}
+
+	function loadAndPlay() {
+	    const nextSongItem = playlistItems[currentSongIndex];
+	    loadSong(nextSongItem.getAttribute('data-src'), nextSongItem.innerText);
+	    audio.play();
+	    playBtn.innerHTML = '<span style="margin-left: -3px">&#9208;</span>';
+	    updateActiveTitle();
+	}
+
+	// Update Progress Bar
+	function updateProgress(e) {
+	    const { duration, currentTime } = e.srcElement;
+	    const progressPercent = (currentTime / duration) * 100;
+	    progress.style.width = `${progressPercent}%`;
+	}
+
+	// Click to Seek
+	function setProgress(e) {
+	    const width = this.clientWidth;
+	    const clickX = e.offsetX;
+	    const duration = audio.duration;
+	    audio.currentTime = (clickX / width) * duration;
+	}
+
+	// Click Title to Play
+	playlistItems.forEach((item, index) => {
+	    item.addEventListener('click', () => {
+	        currentSongIndex = index;
+	        loadAndPlay();
+	    });
+	});
+
+	function updateActiveTitle() {
+	    playlistItems.forEach(item => item.classList.remove('active-song'));
+	    playlistItems[currentSongIndex].classList.add('active-song');
+	}
+
+	// Event Listeners
+	playBtn.addEventListener('click', togglePlay);
+	stopBtn.addEventListener('click', stopSong);
+	nextBtn.addEventListener('click', nextSong);
+	prevBtn.addEventListener('click', prevSong);
+	audio.addEventListener('timeupdate', updateProgress);
+	progressContainer.addEventListener('click', setProgress);
+	audio.addEventListener('ended', nextSong); // Auto play next
+
+	// Initial load
+	loadSong(playlistItems[0].getAttribute('data-src'), playlistItems[0].innerText);
+</script>
 </body>
 </html>
